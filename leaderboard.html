@@ -21,4 +21,14 @@
     {{/if}}
     The number of players is {{numberOfPlayers}}
     {{otherHelperFunction}}
+    {{> addPlayerForm}}
+    <input type="button" class="remove" value="Remove Player">
+</template>
+
+
+<template name="addPlayerForm">
+  <form>
+    <input type="text" name="playerName">
+    <input type="submit" value="Add Player">
+  </form>
 </template>
